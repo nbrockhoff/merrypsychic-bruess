@@ -563,6 +563,8 @@ img {
 }
     }
 
+/*** Header ***/
+
 header {
     background-image: url("../../assets/images/hero--large.jpg");
     height: 40rem;
@@ -597,6 +599,8 @@ header {
     margin-top: 0;
 }
 
+/*** Navigation ***/
+
 nav {
     font-weight: 700;
     text-transform: uppercase;
@@ -606,8 +610,16 @@ nav {
 }
 
 nav ul {
+        background: #fff;
         list-style: none;
         padding: 0;
+    }
+
+@media (min-width: 530px) {
+
+nav ul {
+            background: none
+    }
     }
 
 nav ul li {
@@ -622,6 +634,8 @@ nav ul li:first-child {
 nav ul li:last-child {
                 padding-right: 0;
             }
+
+/*** Banners ***/
 
 .banner {
     text-align: center;
@@ -658,6 +672,8 @@ nav ul li:last-child {
 }
     }
 
+/*** Homegrown ***/
+
 #homegrown {
     height: 20rem;
     margin: 0 auto;
@@ -674,6 +690,8 @@ nav ul li:last-child {
     margin: 0 auto;
     text-align: center;
 }
+
+/*** Feature ***/
 
 #feature {
     height: 30rem;
@@ -753,6 +771,8 @@ nav ul li:last-child {
         color: #F07F7F
 }
     }
+
+/*** Services ***/
 
 #services {
     padding: 1rem;
