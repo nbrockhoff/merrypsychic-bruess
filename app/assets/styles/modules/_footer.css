@@ -1,0 +1,21 @@
+/*** Footer ***/
+
+footer {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $bruess;
+    padding: 3rem;
+    background-color: #fff;
+    text-align: center;
+    & p {
+        padding: 1rem;
+        text-align: center;
+        margin: 1rem;
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        @mixin atSmall {
+            display: inline-block;
+            font-size: 1.4rem;
+        }
+    }
+}

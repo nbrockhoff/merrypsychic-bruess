@@ -1,0 +1,21 @@
+/*** Columns ***/
+
+.quarter {
+    max-width: 100%;
+    @mixin atSmall {
+        max-width: 33%;
+    }
+    @mixin atLarge {
+        max-width: 25%;
+    }
+}
+
+.half {
+    max-width: 100%;
+    @mixin atMedium {
+        max-width: 75%;
+    }
+    @mixin atLarge {
+        max-width: 50%;
+    }
+}

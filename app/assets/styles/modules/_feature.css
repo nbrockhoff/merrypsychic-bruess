@@ -1,0 +1,56 @@
+#feature {
+    height: 30rem;
+    background-size: cover;
+    background-image-opacity: 0.3;
+    background-position-y: 75%;
+    background-color: $bruess;
+    color: $white;
+    box-shadow: 0 1rem 2rem -1rem rgba(66, 71, 75, 0.15);
+    @mixin atSmall {
+        background-image: url("../../assets/images/featured--large.jpg");
+        height: 40rem;
+    }
+    @mixin atMedium {
+        height: 50rem;
+    }
+}
+
+.feature-info {
+    text-align: left;
+    float: left;
+    @mixin atSmall {
+        transform: translateY(40%);
+    }
+}
+
+.feature-info--day {
+    margin: 0;
+    padding-top: 1rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    color: $white;
+    border-bottom: 1px solid $white;
+    padding-bottom: 0.5rem;
+    @mixin atSmall {
+        border-top: 1px solid $bruess;
+        border-bottom: none;
+        color: $bruess;
+    }
+}
+
+.feature-info--desc {
+    font-family: 'Playfair Display', serif;
+    color: $bruess;
+    text-align: left;
+    text-transform: lowercase;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.2rem;
+    color: $white;
+    margin-top: 0;
+    @mixin atSmall {
+        font-size: 3rem;
+        color: $bruess;
+    }
+}

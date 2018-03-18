@@ -1,0 +1,56 @@
+/*** Globals ***/
+
+:root {
+    font-size: 7px;
+    @mixin atSmall {
+        font-size: 8px;
+    }
+    @mixin atMedium {
+        font-size: 10px;
+    }
+}
+
+body {
+    background-color: $white;
+    color: $gray;
+    font-size: 1.9rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $bruess;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: $bruess;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10;
+    @mixin atMedium {
+        max-width: 85%;
+    }
+    @mixin atLarge {
+        max-width: 75%;
+    }
+}

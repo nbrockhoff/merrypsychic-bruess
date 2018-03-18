@@ -1,0 +1,12 @@
+#homegrown {
+    height: 20rem;
+    margin: 0 auto;
+    @mixin atMedium {
+        height: 25rem;
+    }
+}
+
+.body--text {
+    margin: 0 auto;
+    text-align: center;
+}
